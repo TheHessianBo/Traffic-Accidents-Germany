@@ -51,4 +51,3 @@ pip install -r requirements.txt
 
 ## License
 MIT License
-# Traffic-Accidents-Germany
