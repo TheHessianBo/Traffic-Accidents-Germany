@@ -5,48 +5,115 @@ This project analyzes traffic accident data in Germany, focusing on different ac
 
 ## Dataset
 The dataset consists of accident records categorized by:
-- **Accident Types**: Personal injury, material damage, intoxication-related accidents.
-- **Location**: Inside built-up areas, outside built-up areas (excluding motorways), on motorways/freeways.
 
-Source: [Car Accidents](https://www-genesis.destatis.de/datenbank/online/url/7bac8bea)  
+- **Accident Types**:  
+  - **Personal injury accidents** (inside and outside built-up areas, on motorways/freeways)  
+  - **Serious accidents involving material damage**  
+  - **Other accidents involving intoxication**  
+  - **Other accidents involving material damage**  
+
+
+- **Location Categories**:  
+  - Inside built-up areas  
+  - Outside built-up areas (excluding motorways/freeways)  
+  - On motorways/freeways  
+
+
+- Source: [Car Accidents](https://www-genesis.destatis.de/datenbank/online/url/7bac8bea)
+- Files: [Car accidents tables](https://drive.google.com/drive/u/0/folders/1JmMtUwwLEHZ4KbEc4d_YM2q9-RpyLyB5)
 
 ## **Analysis Plan**
 We will analyze accident data using the following approaches:
 
-**1. Total Accidents by Year and Area**
-- Data Aggregation: Group accidents by year and region (state/city/rural vs. urban).
-- Trends: Identify long-term trends, e.g., rising or falling accident rates.
-- Regional Differences: Compare accident frequencies in urban vs. rural areas.
+### **1. Annual Accident Trends by Location**
 
-**2. Accident Categories by Year**
-- Injuries vs. Material Damage: Separate accidents with injuries from those with only property damage.
-- Severity Analysis: Check for patterns in fatal vs. non-fatal accidents.
-- Both Factors Combined: Look at the total impact in terms of cost and casualties.
+#### Categorization:
+- **Objective**: Classify accidents by year and location.
+  - **Locations**: Inside Built-Up Areas, Outside Built-Up Areas, On Motorways/Freeways.
 
-**3. Critical Months & Seasonal Effects**
-- Seasonality Analysis: Identify peaks in accidents per month.
-Winter vs. Summer: Compare accident rates due to ice, fog, or tourism travel in summer.
-- Holidays & Festivities: New Year's Eve, Christmas, Oktoberfest, Easter, and school holidays—do they correlate with spikes in accidents?
-- Weather Correlation: Use historical weather data to see how conditions impact accidents.
+#### Trend Analysis:
+- **Objective**: Identify increases or decreases in accident rates over time.
+  - Analyze the trend in accident numbers over the years to understand if the accident rate is rising or falling.
 
-**4. EURO 2024 Impact**
-- More Traffic, More Accidents?: During major events, are accidents more frequent?
-- City-Specific Impact: Host cities vs. other locations.
-- Time of Day Effects: Are accidents more common before or after matches?
+#### Accident Type Breakdown:
+- **Objective**: Analyze the distribution of accident types.
+  - Categorize accidents by:
+    - Personal Injury
+    - Serious Material Damage
+    - Intoxication-Related Accidents
+    - Other Material Damage
 
-**5. Impact of COVID-19**
-- Immediate Effects (2020-2021):
-    - Fewer cars → fewer accidents?
+#### Influence of Speed Limits & Infrastructure:
+- **Objective**: Investigate the effect of speed limits and road infrastructure on accident rates.
+  - Explore how the speed limits, road conditions, and types of roads (e.g., highways vs. non-highways) correlate with accident frequency.
+
+---
+
+### **2. Accident Classification by Year**
+
+#### Injury vs. Property Damage:
+- **Objective**: Differentiate between accidents causing injuries and those causing only property damage.
+  - Accidents are classified into:
+    - Injury Accidents: Resulting in physical harm.
+    - Property Damage Accidents: Only involving vehicle/property damage.
+
+#### Overall Impact:
+- **Objective**: Assess the combined impact of injuries and property damage.
+  - Quantify the impact in terms of:
+    - Financial Costs
+    - Casualties (fatalities and injuries)
+
+---
+
+### **3. Seasonal & Monthly Patterns**
+
+#### Peak Accident Periods:
+- **Objective**: Identify the months with the highest accident occurrences.
+  - Recognize specific months when accidents are more frequent.
+
+#### Winter vs. Summer Effects:
+- **Objective**: Compare accident rates influenced by seasonal weather conditions.
+  - Analyze how winter weather (ice, snow, fog) and summer travel patterns affect accident rates.
+
+#### Holiday & Event Impact:
+- **Objective**: Examine accident patterns during major holidays and events.
+  - Focus on times like New Year’s Eve, Christmas, Oktoberfest, Easter, and school vacations.
+  - Analyze how holidays affect accident rates.
+
+#### Weather Influence:
+- **Objective**: Correlate accidents with historical weather data.
+  - Assess how weather conditions such as rain, snow, fog, and extreme temperatures affect accident rates.
+  - Use weather patterns to help develop risk mitigation strategies.
+
+---
+
+
+### **4. EURO 2024 Impact**
+- **More Traffic, More Accidents?**: Investigate accident frequency during major events.
+- **City-Specific Impact**: Compare host cities vs. other locations.
+- **Time of Day Effects**: Analyze accident frequency before and after matches.
+- **Public Transport & Road Congestion**: Evaluate alternative transport impact.
+
+---
+
+### **5. Impact of COVID-19**
+- **Immediate Effects (2020-2021):**
+    - Fewer vehicles → fewer accidents?
     - More reckless driving on empty roads?
-- Post-COVID (2022-2024):
+- **Post-COVID (2022-2024):**
    - Did traffic behavior return to normal?
-   - Long-term shifts (e.g., more remote work → fewer accidents in rush hours?)
+   - Long-term shifts (e.g., increased remote work → fewer accidents during rush hours?)
+   - Changes in public transport vs. private vehicle usage.
 
-**6. Machine Learning Predictions for 2024**
-- Trend Forecasting: Use time-series models (e.g., ARIMA, LSTMs) to predict accident numbers.
-- High-Risk Periods & Locations: Train a model to predict where accidents are most likely.
-- Contributing Factors: Feature engineering with weather, traffic, and economic data to improve predictions.
+   ---
 
+### **6. Machine Learning Predictions for 2024**
+- **Trend Forecasting**: Use time-series models (e.g., ARIMA, LSTMs) to predict accident numbers.
+- **High-Risk Periods & Locations**: Train models to predict where accidents are most likely.
+- **Contributing Factors**: Feature engineering with weather, traffic, speed limits, and economic data to improve predictions.
+- **Predictive Hotspot Mapping**: Use geospatial data to visualize accident-prone areas.
+
+---
 
 ## Objectives
 - Perform data cleaning and preprocessing.
@@ -54,6 +121,8 @@ Winter vs. Summer: Compare accident rates due to ice, fog, or tourism travel in 
 - Apply machine learning models to classify high-risk areas.
 - Visualize key insights using interactive dashboards.
 - Provide actionable recommendations for road safety improvements.
+
+## Project Structure
 
 ## Project Structure
 ```
