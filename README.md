@@ -90,8 +90,6 @@ We will analyze accident data using the following approaches:
 
 ### **4. EURO 2024 Impact**
 - **More Traffic, More Accidents?**: Investigate accident frequency during major events.
-- **City-Specific Impact**: Compare host cities vs. other locations.
-- **Time of Day Effects**: Analyze accident frequency before and after matches.
 - **Public Transport & Road Congestion**: Evaluate alternative transport impact.
 
 ---
