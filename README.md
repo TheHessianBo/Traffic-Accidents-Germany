@@ -63,6 +63,8 @@ We will analyze accident data using the following approaches:
     - Financial Costs
     - Casualties (fatalities and injuries)
 
+    !!!!! founded mortality datain other table.... that can be added maybe later 
+
 ---
 
 ### **3. Seasonal & Monthly Patterns**
